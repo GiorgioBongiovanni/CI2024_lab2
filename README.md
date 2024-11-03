@@ -25,7 +25,7 @@ The crossover attempts to maintain the adjacency of cities in the inverted subse
 The fact that the inversion boundaries in the first individual are chosen based on the adjacency of c and c' in the second individual ensures that the choice isn’t entirely random but rather strategically aimed at being heuristically effective, since it tries to preserve the adjacency of c and c' from the second individual.
 
 The inver-over crossover is designed to apply two types of variation—inversion mutation and crossover—without strictly adhering to just one.  
-By using a selection probability p, it dynamically chooses which method to apply, balancing exploration (through mutation) and exploitation (through crossover). This combination allows for small adjustments in solutions preserving connections between cities that contribute to a high fitness score.
+By using a selection probability p, it dynamically chooses which method to apply, balancing exploration (through crossover) and exploitation (through mutation). This combination allows for small adjustments in solutions preserving connections between cities that contribute to a high fitness score.
 The inversion mutation flips the order of a subsequence, introducing variation without a complete overhaul. 
 This is crucial in the TSP since it allows configuration changes while preserving geographical proximity between nearby cities.  
 Maintaining many of the original connections helps avoid destroying beneficial structures, which is critical for optimization problems where good solutions are often similar to one another.
